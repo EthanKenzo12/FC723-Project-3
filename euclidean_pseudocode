@@ -1,0 +1,23 @@
+Pseudocode breakdown:
+
+1. Understand the problem you are trying to solve:
+
+- Problem_1; Calculate the Greatest Common Divisor (GCD) of given two positive integers
+- Problem_2; Using the euclidean algorithm
+
+2. Break down the problem into smaller steps:
+
+-step 1 Start with 2 positive integers named 'a' and 'b', where 'a' is the dividend and 'b' is the divisor
+-step 2 Ensure that the positive integer 'b' is less than 'a'
+-step 3 Divide 'a' with 'b', if there is no remainder then b is the GCD
+-step 4 if the division has a remainder r keep it.
+-step 5 replace 'a' with the previous divisor b and 'b' with the remainder 'r'
+-step 6 continue dividing the previous divisor 'b' with the previous remainder 'r'.
+-step 7 if there is no remainder, the divisor at that step returning no remainder is the GCD
+
+3. Write out the complete pseudocode:
+
+Function EuclideanAlgorithm(a, b):
+    If b is equal to 0, return a.
+    If b is greater than a, swap (a, b)
+    Otherwise, recursively call EuclideanAlgorithm with arguments b and the remainder of a divided by b.
