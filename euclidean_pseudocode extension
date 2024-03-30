@@ -1,0 +1,16 @@
+Modification:
+modified based pseudocode to take on the functionality of the euclidean algorithm to:
+- not only the greatest common divisor (GCD) of two numbers
+- but also to find integers x and y such that ax + by = gcd(a, b).
+This is known as the Extended Euclidean Algorithm and is often used in cryptography and number theory.
+
+Function extended_euclidean_algorithm(a, b):
+    If b is equal to 0:
+        Return a, 1, 0  # Base case: If b is 0, the GCD is a and the coefficients x and y are 1 and 0 respectively.
+    Else:
+        Recursively call extended_euclidean_algorithm with arguments b and the remainder of a divided by b.
+        This call returns the GCD of b and the coefficients x1 and y1.
+        Calculate the coefficients x and y using the previously obtained values:
+            x is equal to y1
+            y is equal to x1 minus the result of dividing a by b and multiplying it by y1
+        Return the GCD, x, and y obtained in this recursive step.
