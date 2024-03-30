@@ -1,7 +1,6 @@
 def euclidean_algorithm(a, b):
     """
     Calculate the Greatest Common Divisor (GCD) of two positive integers using the Euclidean Algorithm.
-
     Parameters:
     a (int): a positive integer representing the dividend.
     b (int): a positive integer representing the divisor.
@@ -22,6 +21,25 @@ def euclidean_algorithm(a, b):
     return euclidean_algorithm(b, a % b)
 
 
-# Example usage
-# The GCD of 48 and 18 is 6
-print(euclidean_algorithm(48, 18))
+# created try exception handling to give the user an error message if the input is invalid
+try:
+    # prompt for user input for the values of a and b
+    a = int(input("Give me a value for a: "))
+    b = int(input("Give me a value for b: "))
+
+    print(euclidean_algorithm(a, b))
+except ValueError:
+    """
+    Exception handling occurs if the user enters something that cannot be converted to an integer,
+    such as a string or a float.
+    Example: twenty-one or 21.0 instead of 21
+    
+    """
+    print("Error: Please enter a positive integer and try again!")
+except RecursionError:
+    """
+    Exception handling occurs if the recursive calls exceed the maximum recursion depth
+    this may be done if there is a negative value for a and a positive value for b.
+    Example: -40 and 2
+    """
+    print("Error: Recursion limit exceeded please try again!")
