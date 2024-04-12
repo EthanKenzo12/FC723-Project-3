@@ -1,7 +1,7 @@
 Modification:
-modified based pseudocode to take on the functionality of the euclidean algorithm to:
-- not only the greatest common divisor (GCD) of two numbers
-- but also to find integers x and y such that ax + by = gcd(a, b).
+modified base pseudocode to take on the functionality of the euclidean algorithm to:
+- not only find the greatest common divisor (GCD) of two numbers
+- but also to find the integers x and y such that ax + by = gcd(a, b).
 This is known as the Extended Euclidean Algorithm and is often used in cryptography and number theory.
 
 Function extended_euclidean_algorithm(a, b):

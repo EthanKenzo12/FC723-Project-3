@@ -1,12 +1,12 @@
-The use of git log command to display a list of commits made in the repository
+The use of the (git log) command displays a list of commits made in the repository
 along with relevant information like commit hash, author, date, and commit message.
-this will help me keep track of commits that I have made and pushed to the repository.
-Git show command displays the changes introduced in a particular commit.
-specifying the commit hash or a branch name allows you to view the changes introduced to those branches with the commit
-The git diff command shows the differences between two commits,
-the working directory, or between the working directory and the staging area.
-the function is akin to viewing the history of the particular branch or folder,
-allowing you to see and compare the before and after changes interlocutor with a particular commit
-lastly, git commit creates a new commit with the changes staged in the staging area.
-It opens an editor for you to enter a commit message. opening a commit message serves a similar function to commenting on code
-as it details a quick summary of the main changes you have made to the code prior to pushing the commit to origin
+This will help me keep track of commits that I have made and pushed to the repository.
+The (git show) command displays the changes that have been introduced in a particular commit.
+By specifying the command with [commit hash] I may view the changes introduced to those branches with the commit
+The (git diff) command shows the differences between two commits,
+in the working directory, or between the working directory and the staging area.
+This function is akin to a historical comparison within a branch or folder,
+allowing me to see and compare the before and after changes of the code for any given commit.
+Lastly, the (git commit) command creates a new commit with the changes staged in the staging area.
+It opens an editor for you to enter a commit message. Opening a commit message serves a similar function to commenting on code
+as it details a quick summary of the main changes made to the code prior to pushing the commit to the remote repository.
